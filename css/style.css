@@ -1,4 +1,35 @@
-.biblio_book_top span{
+body {
+	color: #32325f;
+}
+
+.biblio_book_top{
 	display: flex;
+	flex-direction: column;
+}
+
+.title{
+	font-size: 48px;
+	font-weight: 400;
+}
+.price {
+	font-size: 48px;
+	font-weight: 400;
+}
+.biblio_book_annotation {
+	text-align: justify;
+}
+
+@media (max-width: 768px) {
+	.biblio_book_top{
+		text-align: center;
+	}
+	.title{
+		font-size: 26px;
+		font-weight: 400;
+	}
+	.price {
+		font-size: 32px;
+		font-weight: 400;
+	}
 
 }
