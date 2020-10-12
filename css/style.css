@@ -24,14 +24,7 @@ body {
 	line-height: 22px;
 	margin-bottom: 14px;
 	font-weight: bold;
-} {
-	font-size: 18px;
-	line-height: 22px;
-	margin-bottom: 14px;
-	font-weight: bold;
 }
-
-
 @media (max-width: 768px) {
 	.biblio_book_top{
 		text-align: center;
