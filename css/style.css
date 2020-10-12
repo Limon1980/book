@@ -19,6 +19,19 @@ body {
 	text-align: justify;
 }
 
+.biblio_book_descr_caption {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 14px;
+	font-weight: bold;
+} {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 14px;
+	font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
 	.biblio_book_top{
 		text-align: center;
@@ -31,5 +44,6 @@ body {
 		font-size: 32px;
 		font-weight: 400;
 	}
+
 
 }
