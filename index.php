@@ -1,3 +1,13 @@
+<?php
+
+if (!isset($_COOKIE['user_key'])){
+	session_start();
+	$value = session_id();
+	setcookie("user_key", $value, strtotime( '+90 days' )); 
+	include 'bd_insert.php';
+} 
+?>
+
 <!doctype html>
 <html lang="ru">
 
@@ -23,7 +33,7 @@
 				Я не люблю сладкое
 			</a>
 		</nav>
-		<div class="row align-items-center">
+		<div class="row">
 			<div class="col-md-6 col-sm-12">
 				<div class="image">
 					<img src="img/42609522-regina-doktor-ya-ne-lublu-sladkoe.jpg" class="rounded mx-auto d-block"
@@ -43,9 +53,24 @@
 						<span class="seria">Из серии: Лечу едой</span>
 					</div>
 					<strong class="price">50 руб</strong>
-					<div class="buttons">
-						<a href="" class="btn btn-success mt-3 bt">Купить книгу</a>
-					</div>
+
+					<?php 
+
+					include 'bd_query.php';
+
+					if ($actor['pay'] == 0) {
+
+						echo '					<div class="buttons">
+						<a href="/form.php" class="btn btn-success mt-3 bt">Купить книгу</a>
+					</div>';
+					} else {
+						echo 'link';
+					}
+					
+					
+					
+					?>
+
 				</div>
 
 
@@ -161,6 +186,7 @@
 
 
 	<!-- Optional JavaScript -->
+	<script src="script/script.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
