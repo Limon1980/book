@@ -18,7 +18,17 @@ body {
 .biblio_book_annotation {
 	text-align: justify;
 }
+.biblio_book_descr_caption
+{
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 14px;
+	font-weight: bold
+}
 
+.biblio_book_descr p {
+	padding: 0 0 12px 0;
+}
 @media (max-width: 768px) {
 	.biblio_book_top{
 		text-align: center;
