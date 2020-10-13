@@ -58,13 +58,14 @@ if (!isset($_COOKIE['user_key'])){
 
 					include 'bd_query.php';
 
-					if ($actor['pay'] == 0) {
+					if ($actor['pay'] == 1) {
+						echo 'link';
+				
+					} else {
 
 						echo '					<div class="buttons">
 						<a href="/form.php" class="btn btn-success mt-3 bt">Купить книгу</a>
 					</div>';
-					} else {
-						echo 'link';
 					}
 					
 					
@@ -188,7 +189,7 @@ if (!isset($_COOKIE['user_key'])){
 	<!-- Optional JavaScript -->
 	<script src="script/script.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -196,7 +197,7 @@ if (!isset($_COOKIE['user_key'])){
 		crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous"></script> -->
 </body>
 
 </html>
