@@ -16,6 +16,24 @@ body {
 	font-size: 48px;
 	font-weight: 400;
 }
+del {
+	font-size: 40px;
+	position: relative;
+	color: #000;
+	text-decoration: none;
+}
+del:before {
+	content: "";
+	border-bottom: 3px solid red;
+	position: absolute;
+	width: 120%;
+	height: 80%;
+	margin-left: -20%;
+	transform: rotate(-20deg);
+}
+.text-sell{
+	color: red;
+}
 .biblio_book_annotation {
 	text-align: justify;
 }
@@ -62,6 +80,9 @@ body {
 	.price {
 		font-size: 32px;
 		font-weight: 400;
+	}
+	del {
+		font-size: 28px;
 	}
 
 
